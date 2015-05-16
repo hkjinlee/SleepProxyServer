@@ -8,6 +8,7 @@ import netifaces
 from sleepproxy.manager import manage_host
 
 def handle(server, raddress, message):
+    print "handle()"
     try:
         message = dns.message.from_wire(message)
     except:
